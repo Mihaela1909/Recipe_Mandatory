@@ -634,27 +634,31 @@ gap: 8px;
     background-color: var(--primary-color);
     width: var(--width-full);
     margin-top: 250px;
-    padding: 10px 50px;
+    padding: 40px 50px 20px 50px;
 }
 
-.footer_block{
-    width: var(--width-12col);
-    display: grid;
+.footer_all {
+     width: var(--width-12col);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: start;
+    position: relative;
+    gap: 20px;
+    
+    
 }
+
  
 
 .footer_block_left {
-    display: grid;
-  gap: 10px; /* control horizontal distance between icons and text */
-  grid-column: 1 / span 2;
-  grid-row: 2;
+    grid-column: 1 / span 4;
 }
 
 .footer_text {
     display: flex;
   flex-direction: column;
-  gap: 10px; /* space between YouTube / Instagram / Facebook */
+  gap: 10px; 
   padding: 10px 0 0 0;
 
  
@@ -670,17 +674,202 @@ display: flex;
 }
 
 .footer_block_center {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+   grid-column: 5 / span 4 ;
+   text-align: center;
+    
 
 }
  
 .footer_block_right {
+  grid-column: 9 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+ gap: 10px;
+}
+
+.footer_block_left p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.footer_block_center p {
+    margin: 9px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.footer_block_right p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ 
+.footer_block_right_white {
+    color: var(--background-color-light);
+    font-size: 10px;
+    text-align: right;
     display: flex;
     flex-direction: column;
-    text-align: end;
+    align-items: flex-end;
+}
 
+
+
+.footer_block_right_end_svg {
+    display: flex;
+    gap: 10px;
+
+}
+.footer_block_right_end {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 0;
+}
+
+
+
+
+/* Recipe details page */
+.hero_recipe {
+    background-color: var(--background-color-dark-bg);
+    background: linear-gradient(0deg, #ededed11, #ededed07);
+    min-height: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: var(--background-color-light);
+    margin: 0;
+    border-bottom: 1px solid var(--background-color-dark-bg);
+}
+
+.recipe-container{
+     width: var(--width-12col);
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.recipe-text {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    margin: 200px 0 0 0;
+}
+
+.recipe-text h1 {
+    padding: 0; /*redundant*/
+    margin: 15px 0 15px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.recipe-text h1 span {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+
+.hero_recipe_svg {
+    grid-column: 1 / span 6;
+    display: flex;
+justify-content: center;
+gap: 130px;
+flex-wrap: wrap;
+  padding: 50px 0 0 0;
+  
+}
+
+.hero_recipe_svg p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.top_orange_text {
+    color: var(--primary-color);
+    font-size: 13px;
+
+}
+.recipe_block_ingredients {
+    padding: 50px 0 0 0;
+  
+}
+.recipe_block_ingredients_first_list {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+justify-content: center;
+gap: 130px;
+font-size: 13px;
+font-weight: 300;
+}
+
+.recipe_block_ingredients_first_list ul {
+   padding-left: 15px;
+   margin: 0;
+   
+}
+
+.recipe_block_ingredients_first_list li {
+   margin-bottom: 7px;
+}
+
+.recipe_button {
+padding: 20px 0 10px 0;
+}
+
+.recipe_button button{
+background-color: transparent;
+    border:1px solid var(--color-white);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px 5px;
+}
+
+.recipe_button a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 100;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.instructions_block {
+ width: var(--width-12col);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 130px auto;
+    gap: var(--grid-gap);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.instructions_headline {
+    width: 100%;
+color: var(--background-color-light);
+height: 45px;
+border-bottom: 1px solid var(--background-color-light);
+margin: 70px 0 0 0;
+font-size: 37px;
+text-transform: uppercase;
+font-weight: 900;
 }
 
 
