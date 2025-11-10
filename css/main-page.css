@@ -850,27 +850,54 @@ background-color: transparent;
     margin: 0;
 }
 
+/* instructions area */
 .instructions_block {
  width: var(--width-12col);
     height: fit-content;
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 130px auto;
     gap: var(--grid-gap);
     box-sizing: border-box;
     margin: 0 auto;
+    
+    
 }
 
 .instructions_headline {
-    width: 100%;
+ grid-column: 1 / span 12;
+width: 100%;
 color: var(--background-color-light);
 height: 45px;
 border-bottom: 1px solid var(--background-color-light);
 margin: 70px 0 0 0;
+
 font-size: 37px;
 text-transform: uppercase;
 font-weight: 900;
 }
+
+.instructions_block_list {
+    grid-column: 1 / span 8;
+    width: 100%;
+    margin: 0;
+    
+  
+}
+
+.instructions_block ul {
+list-style-type: decimal;
+color: var(--background-color-light);
+font-size: 14px;
+ margin: 0;
+ padding-left: 20px;
+    
+}
+
+.instructions_block li {
+    margin-bottom: 20px;
+}
+
 
 
 /* Search page */
