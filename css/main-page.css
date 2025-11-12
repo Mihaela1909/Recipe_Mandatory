@@ -169,6 +169,14 @@ grid-row: 2;
 margin: 60px 0 0 0;
 }
 
+
+.search-icon {
+position: absolute;
+margin-left: 10px;
+margin-top: 8px;
+
+}
+
 .search-input {
     background-color: transparent;
     padding: 10px 20px 10px 40px;
@@ -308,12 +316,19 @@ div[data-category="seafood1"] {
  p[data-category="seafood"], span[data-category="seafood"]  {
 color: var(--category-seafood);
  }
+
+ a[data-category="seafood"] {
+    border-left: 3px solid var(--category-seafood);
+}
  
 /* data-categories colors end*/
 
 /* data-categories colors start*/
 div[data-category="chicken"] {
     border-left: 1px solid var(--category-chicken);
+}
+a[data-category="chicken"] {
+    border-left: 3px solid var(--category-chicken);
 }
 div[data-category="chicken1"] {
 color: var(--category-chicken);
@@ -1041,21 +1056,24 @@ margin-bottom: 10px;
 
 /* Search page */
 .hero-searchpage {
-    background-color: var(--background-color-dark-bg);
-    background: linear-gradient(0deg, #ededed11, #ededed07);
-    min-height: 600px;
-    height: auto;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     position: relative;
     color: var(--background-color-light);
-    margin: 0;
+    margin-top: 150px;
     border-bottom: 1px solid var(--background-color-dark-bg);
 }
 
+.hero-container-searchpage {
+     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    width: var(--width-12col);
+}
 
 .search-box-searchpage {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 6;
     grid-row: 2;
     margin: 60px 0 0 0;
 
@@ -1063,7 +1081,7 @@ margin-bottom: 10px;
 
 .search-input {
     background-color: transparent;
-    padding: 10px 20px 10px 40px;
+    padding: 10px 150px 10px 50px;
     border: 1px solid var(--background-color-light);
     border-radius: 5px;
     outline: none;
@@ -1088,10 +1106,10 @@ margin-bottom: 10px;
 
 .filter-category-checkbox {
     background-color: var(--background-color-dark-bg);
-    background: linear-gradient(90deg, #ededed11, #ededed07);
-    grid-column: 6 / span 7;
+    background: linear-gradient(90deg, #ededed25, #ededed00);
+    grid-column: 6 / span 6;
     grid-row: 2;
-    padding: 30px 40px;
+    padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
     height: 240px;
@@ -1101,7 +1119,7 @@ margin-bottom: 10px;
 
 .filter-category-checkbox h3 {
 width: 100%;
-font-size: 18px;
+font-size: 22px;
 font-weight: 400;
 
 }
@@ -1112,7 +1130,7 @@ font-weight: 400;
     margin: 0px 0;
     color: var(--background-color-light);
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     width: 50%;
     height: 20px;
     
@@ -1158,3 +1176,63 @@ accent-color: var(--category-pasta);
 }
 
 
+.search_results {
+width: var(--width-12col);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.search_page_headline {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(--background-color-light);
+color: var(--background-color-light);
+}
+
+.serp{
+grid-column: 2 / span 10;
+}
+.search_page_headline_two {
+
+     border-bottom: 1px solid var(--background-color-light);
+color: var(--background-color-light);
+}
+
+.search_page_headline_three {
+
+     border-bottom: 1px solid var(--background-color-light);
+color: var(--background-color-light);
+}
+.serp-item {
+    color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+}
+.serp-item a {
+padding-left: 10px;
+}
+
+.serp-item h3 {
+color: var(--background-color-light);
+font-weight: 500;
+}
+
+.serp-item h2 {
+color: var(--primary-color);
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.serp-item p {
+color: var(--background-color-light);
+margin-bottom: 50px;
+font-size: 16px;
+}
