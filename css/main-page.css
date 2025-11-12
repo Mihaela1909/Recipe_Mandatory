@@ -540,7 +540,7 @@ width: 100%;
 color: var(--background-color-light);
 height: 45px;
 border-bottom: 1px solid var(--background-color-light);
-margin: 70px 0 0 0;
+margin: 70px 0 15px 0;
 font-size: 37px;
 text-transform: uppercase;
 font-weight: 900;
