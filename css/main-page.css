@@ -1238,3 +1238,50 @@ color: var(--background-color-light);
 margin-bottom: 50px;
 font-size: 16px;
 }
+
+
+/* chef page */
+
+.hero-chef {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: var(--background-color-light);
+    margin-top: 150px;
+    border-bottom: 1px solid var(--background-color-dark-bg);
+
+
+
+}
+
+.hero-container-chef {
+     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    width: var(--width-12col);
+
+}
+
+.hero-text-chef {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin: 200px 0 0 0;
+}
+
+.hero-text-chef h1 {
+    padding: 0; /*redundant*/
+    margin: 15px 0 15px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.hero-text-chef h1 span {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.hero-text-chef p {
+    font-size: 14px;
+}
