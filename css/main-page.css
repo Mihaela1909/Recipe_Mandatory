@@ -1258,30 +1258,54 @@ font-size: 16px;
 .hero-container-chef {
      display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto;
     width: var(--width-12col);
 
 }
 
-.hero-text-chef {
-    grid-column: 1 / span 4;
+
+
+
+.hero_chef_image {
+    grid-column: 7 / span 6;
     grid-row: 1;
-    margin: 200px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+} 
+
+.hero-text-chef {
+     grid-column: 1 / span 6;
+    grid-row: 1;
+    margin-top: 50px;
 }
 
 .hero-text-chef h1 {
-    padding: 0; /*redundant*/
-    margin: 15px 0 15px 0;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: 400;
+    color: var(--background-color-light);
+padding: 0; 
+gap: 0;   
+font-size: 37px;
+    font-weight: 700;
 }
 
-.hero-text-chef h1 span {
-    font-weight: 900;
-    font-size: 32px;
+.hero-text-chef h2 {
+    color: var(--primary-color);
+padding: 0 0 30px 0;    
+font-size: 36px;
+    font-weight: 500;
 }
+
+.hero-text-chef h4 {
+    color: var(--primary-color);
+font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
 
 .hero-text-chef p {
     font-size: 14px;
+    line-height: 2;
+    
 }
+
