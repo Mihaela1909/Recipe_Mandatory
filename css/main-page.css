@@ -1246,8 +1246,6 @@ font-size: 16px;
     min-height: 300px;
     display: flex;
     justify-content: center;
-    position: relative;
-    color: var(--background-color-light);
     margin-top: 150px;
     border-bottom: 1px solid var(--background-color-dark-bg);
 
@@ -1306,6 +1304,98 @@ font-size: 12px;
 .hero-text-chef p {
     font-size: 14px;
     line-height: 2;
-    
+        color: var(--background-color-light);
+            font-weight: 400;
+
 }
+
+.chef_page_headline {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-bottom: 1px solid var(--background-color-light);
+color: var(--background-color-light);
+margin-top: 100px;
+}
+
+.hero-container-chef-sec {
+       display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: var(--width-12col);
+}
+
+.hero_chef_image_sec {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+} 
+
+.hero-text-chef-sec {
+     grid-column: 7 / span 6;
+    grid-row: 1;
+    margin-top: 50px;
+}
+
+.hero-text-chef-sec h1 {
+    color: var(--background-color-light);
+padding: 0; 
+gap: 0;   
+font-size: 37px;
+    font-weight: 700;
+}
+
+.hero-text-chef-sec h2 {
+    color: var(--primary-color);
+padding: 0 0 30px 0;    
+font-size: 36px;
+    font-weight: 500;
+}
+
+.hero-text-chef-sec p {
+    font-size: 14px;
+    line-height: 2;
+        color: var(--background-color-light);
+            font-weight: 400;
+
+}
+
+.hero-text-chef-sec-top {
+   text-align: right;
+}
+
+.section-kitchen {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+width: var(--width-12col);
+margin: 100px auto;
+}
+
+.section-kitchen-image {
+    grid-column: 1 / span 12;
+    height: 550px;
+    background: url(Img/kitch.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-kitchen-text {
+    grid-column: 2/ span 10;
+    background: var(--background-color-light);
+    padding: 40px;
+}
+
+.section-kitchen-text h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 22px;
+}
+
+.section-kitchen-text p {
+  text-align: end;
+}
+
+
 
