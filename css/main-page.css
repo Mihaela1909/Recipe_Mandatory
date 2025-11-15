@@ -1369,6 +1369,7 @@ font-size: 36px;
 .section-kitchen {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 130px auto;
 width: var(--width-12col);
 margin: 100px auto;
 }
@@ -1379,13 +1380,17 @@ margin: 100px auto;
     background: url(Img/kitch.png);
     background-size: cover;
     background-position: center;
+    
 }
 
-.section-kitchen-text {
+.section-kitchen-block {
     grid-column: 2/ span 10;
     background: var(--background-color-light);
-    padding: 40px;
+    padding: 60px;
+    margin: 70px 0 0 0;
+    border-radius: 5px;
 }
+
 
 .section-kitchen-text h2 {
     color: var(--primary-color);
@@ -1396,6 +1401,7 @@ margin: 100px auto;
 .section-kitchen-text p {
   text-align: end;
 }
+
 
 
 
